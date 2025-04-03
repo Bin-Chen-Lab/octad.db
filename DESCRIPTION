@@ -1,11 +1,13 @@
-Package: octad
-Title: Open Cancer TherApeutic Discovery (OCTAD)
-Version: 0.99.0
+Package: octad.db
+Title: Open Cancer TherApeutic Discovery (OCTAD) database
+Version: 0.99.43
 Authors@R: 
     c(person(given = "E.",
            family = "Chekalin",
            role = c("aut", "cre"),
            email = "eygen.chekalin@gmail.com"),
+           person(given = "S.",
+           family = "Paithankar",role =c("aut")),
            person(given = "B.",
            family = "Zeng",role =c("aut")),
            person(given = "B.",
@@ -25,37 +27,21 @@ Authors@R:
            role ="aut",
            email = "chenbi12@msu.edu")
            )
-Description: OCTAD provides a platform for virtually screening compounds targeting precise cancer patient groups. The essential idea is to identify drugs that reverse the gene expression signature of disease by tamping down over-expressed genes and stimulating weakly expressed ones. The package offers deep-learning based reference tissue selection, disease gene expression signature creation, pathway enrichment analysis, drug reversal potency scoring, cancer cell line selection, drug enrichment analysis and in silico hit validation. It currently covers ~20,000 patient tissue samples covering 50 cancer types, and expression profiles for ~12,000 distinct compounds.
+Description: Open Cancer TherApeutic Discovery (OCTAD) package implies sRGES approach for the drug discovery. The essential idea is to identify drugs that reverse the gene expression signature of a disease by tamping down over-expressed genes and stimulating weakly expressed ones. The following package contains all required precomputed data for whole OCTAD pipeline computation. 
 License: Artistic-2.0
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 Roxygen: list(markdown = TRUE)
+<<<<<<< HEAD
 RoxygenNote: 7.3.2
+=======
+RoxygenNote: 7.2.1
+>>>>>>> origin/master
 Depends: 
-    R (>= 4.0),
-    magrittr,
-    dplyr,
-    ggplot2,
-    edgeR,
-    RUVSeq,
-    DESeq2,
-    limma,
-    rhdf5,
-    doParallel,
-    foreach,
-    Rfast,
-    octad.db,
-    stats,
-    httr
-Imports:
-    EDASeq, 
-    GSVA, 
-    data.table, 
-    htmlwidgets, 
-    plotly, 
-    reshape2
+    R (>= 4.2.0),
+    ExperimentHub
+biocViews: ExperimentData, CancerData, ExperimentHub, SequencingData, ExpressionData
+VignetteBuilder: knitr
 Suggests: 
     knitr,
     rmarkdown
-VignetteBuilder: knitr
-biocViews: Classification, GeneExpression, Pharmacogenetics, Pharmacogenomics, Software
