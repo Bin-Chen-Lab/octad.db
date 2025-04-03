@@ -13,7 +13,7 @@ computeRefTissue <- function(case_id = NULL,
                              #top site or any cor cutoff>quantile,
                              #all will select samples from 90th percentile
                              control_size = length(case_id),
-                             outputFolder='',
+                             outputFolder='computeRefTissueOutputFolder',
                              cor_cutoff='0', #greater or equal than the cutoff 
                              output=TRUE){
   

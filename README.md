@@ -1,4 +1,6 @@
 # Web version: 
+TEST
+
 http://octad.org/
 
 # How to Install
@@ -22,7 +24,6 @@ if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(packages, rownames(installed.packages())))  
 }
 ```
-
 Next, install the octad.db, package with all required files for computation available via link  [octad.db](https://chenlab-data-public.s3.amazonaws.com/octad/octad.db_0.99.0.tar.gz%3Fdl%3D0)
 ```
 install.packages("octad.db_0.99.0.tar.gz", repos = NULL, type="source")
@@ -33,7 +34,7 @@ install.packages("https://chenlab-data-public.s3.amazonaws.com/octad/octad.db_0.
                  method="libcurl",repos=NULL,type="source")
 ```
 It takes a few minutes to install the package and verify files. Afterward, the pipeline will be ready to run. 
-Finally, install the package:
+Finally, install the octad package:
 ```
 devtools::install_github('Bin-Chen-Lab/octad',build_vignettes = TRUE)
 ```
